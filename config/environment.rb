@@ -7,7 +7,7 @@ Rails.application.initialize!
 ActiveMailer::Base.smtp_settings = {
     :port           => ENV[MAILGUN_SMPT_PORT],
     :address        => ENV[MAILGUN_SMPT_SERVER],
-    :username       => ENV[MAILGUN_SMPT_LOGIN],
+    :user_name      => ENV[MAILGUN_SMPT_LOGIN],
     :password       => ENV[MAILGUN_SMPT_PASSWORD],
     :domain         => 'stormy-depths-50973.herokuapp.com',
     :authentication => :plain,
